@@ -16,10 +16,12 @@ its a performance optimization hook that can caches the expensive computation . 
 its a react hook it used memorize a function . pass a function between renders . and it basically used in performance optimization ,  paassing a callback in chield components and passing function in dependency array 
 
 6.Difference Between useMemo and useCallback
-useMemo    --	useCallback
-Memoizes a value   -- 	Memoizes a function
-Returns computed result   -- 	Returns function reference
-Used for expensive calculations --	Used to prevent function recreation
+| useMemo                         | useCallback                         |
+| ------------------------------- | ----------------------------------- |
+| Memoizes a value                | Memoizes a function                 |
+| Returns computed result         | Returns function reference          |
+| Used for expensive calculations | Used to prevent function recreation |
+
 
 7.Difference between Props and State?
 
