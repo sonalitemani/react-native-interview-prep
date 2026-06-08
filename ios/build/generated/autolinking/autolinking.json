@@ -1,20 +1,20 @@
 {
-  "root": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement",
-  "reactNativePath": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/node_modules/react-native",
+  "root": "/Users/necixy/sonali/react-native/react-native-interview-prep",
+  "reactNativePath": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native",
   "reactNativeVersion": "0.85",
   "dependencies": {
     "react-native-safe-area-context": {
-      "root": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/node_modules/react-native-safe-area-context",
+      "root": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "5.8.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -23,7 +23,49 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-screens": {
+      "root": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-screens",
+      "name": "react-native-screens",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-screens/RNScreens.podspec",
+          "version": "4.25.2",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-screens/android",
+          "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
+          "packageInstance": "new RNScreensPackage()",
+          "buildTypes": [],
+          "libraryName": "rnscreens",
+          "componentDescriptors": [
+            "RNSFullWindowOverlayComponentDescriptor",
+            "RNSScreenContainerComponentDescriptor",
+            "RNSScreenNavigationContainerComponentDescriptor",
+            "RNSScreenStackHeaderConfigComponentDescriptor",
+            "RNSScreenStackHeaderSubviewComponentDescriptor",
+            "RNSScreenStackComponentDescriptor",
+            "RNSSearchBarComponentDescriptor",
+            "RNSScreenComponentDescriptor",
+            "RNSScreenFooterComponentDescriptor",
+            "RNSScreenContentWrapperComponentDescriptor",
+            "RNSModalScreenComponentDescriptor",
+            "RNSTabsHostComponentDescriptor",
+            "RNSSafeAreaViewComponentDescriptor",
+            "RNSStackScreenComponentDescriptor",
+            "RNSStackHeaderConfigComponentDescriptor",
+            "RNSStackHeaderSubviewComponentDescriptor"
+          ],
+          "cmakeListsPath": "/Users/necixy/sonali/react-native/react-native-interview-prep/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -194,7 +236,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/ios"
+          "default": "/Users/necixy/sonali/react-native/react-native-interview-prep/ios"
         },
         {
           "name": "--platform <string>",
@@ -251,7 +293,7 @@
         {
           "name": "--terminal <string>",
           "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "Apple_Terminal"
+          "default": "vscode"
         },
         {
           "name": "--binary-path <string>",
@@ -419,7 +461,7 @@
         {
           "name": "--terminal <string>",
           "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "Apple_Terminal"
+          "default": "vscode"
         },
         {
           "name": "--appId <string>",
@@ -494,16 +536,16 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/ios",
+      "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/ios",
       "xcodeProject": {
-        "name": "UsersManagement.xcodeproj",
+        "name": "UsersManagement.xcworkspace",
         "path": ".",
-        "isWorkspace": false
+        "isWorkspace": true
       },
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/UsersManagement/android",
+      "sourceDir": "/Users/necixy/sonali/react-native/react-native-interview-prep/android",
       "appName": "app",
       "packageName": "com.usersmanagement",
       "applicationId": "com.usersmanagement",
