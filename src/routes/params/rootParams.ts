@@ -1,4 +1,6 @@
 interface rootParams {
     'User': undefined,
-    'UserDetials': 'id'
+    'UserDetials': {
+        user: any
+    }
 }

@@ -9,7 +9,7 @@ export function RootStack() {
     return (
         <Navigator>
             <Screen name={rootName.User} component={UsersList} />
-            <Screen name={rootName.UserDetails} initialParams={{ id: 1 }} component={UserDetail} />
+            <Screen name={rootName.UserDetails} component={UserDetail} />
         </Navigator>
     );
 }
