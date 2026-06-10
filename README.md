@@ -1,4 +1,4 @@
-# react-native-interview-prep
+      # react-native-interview-prep
 Interview Preparation 
 1. What is useState?
 react native hook allow to manage functional component . whenever the state changes in setter function the react will re render the component and  updates the UI accordingly
@@ -34,4 +34,7 @@ Props vs State
 | Re-render     | Component re-renders when props change               | Component re-renders when state changes |
 | Purpose       | Pass data and behavior between components            | Store and manage component data         |
 | Modification  | Cannot be modified directly by child                 | Can be updated using setter functions   |
+
+Why did you move API logic into a custom hook?
+The hook separates business logic from UI. It makes the code reusable, easier to test, and keeps components focused on rendering.
 
