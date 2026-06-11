@@ -1,5 +1,6 @@
 import { View, Text } from 'react-native'
 import React, { useEffect, useState } from 'react'
+import useDebounce from './ useDebounce';
 
 type Users = {
     id: string;
@@ -23,10 +24,14 @@ type Users = {
 
 const useUser = () => {
     const [isLoading, setLoading] = useState(true);
-    const [isRefreshing, setIsRefreshing] = useState(false;)
+    const [isRefreshing, setIsRefreshing] = useState(false);
     const [data, setData] = useState<Users[]>([]);
     const [filterdata, setFilterData] = useState<Users[]>([]);
+    const [searchText, setSearchText] =
+        useState('');
+    const debouncedValue = useDebounce(searchText);
     const handleSearch = (search: string) => {
+
         const query = search.toLowerCase();
 
         if (query != '') {
@@ -64,12 +69,18 @@ const useUser = () => {
         getUser();
 
     }, []);
+    useEffect(() => {
+        console.log(debouncedValue);
+        handleSearch(debouncedValue);
+    }, [debouncedValue]);
     return {
         refresh,
         filterdata,
         handleSearch,
         isLoading,
-        isRefreshing
+        isRefreshing,
+        searchText,
+        setSearchText
     }
 }
 
