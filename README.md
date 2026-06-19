@@ -35,6 +35,13 @@ Props vs State
 | Purpose       | Pass data and behavior between components            | Store and manage component data         |
 | Modification  | Cannot be modified directly by child                 | Can be updated using setter functions   |
 
-Why did you move API logic into a custom hook?
+8.Why did you move API logic into a custom hook?
 The hook separates business logic from UI. It makes the code reusable, easier to test, and keeps components focused on rendering.
+
+9.Explain React Native Architecture ? 
+       1. React Native allows developers to build mobile applications using JavaScript while rendering native UI components. 
+       2. Traditionally, React Native had three main parts: the JavaScript Thread, the Native Thread, and the Bridge. 
+       3. The JavaScript thread contains the business logic and React code, while the Native thread handles platform-specific UI rendering. 
+       4. Communication between them happens through the Bridge. 
+       5. In the new architecture, React Native introduced JSI, TurboModules, and Fabric, which reduce bridge overhead and improve performance by      enabling more direct communication between JavaScript and native code.
 
