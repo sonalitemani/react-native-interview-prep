@@ -1,4 +1,5 @@
 export enum rootName {
     'User' = 'user',
-    'UserDetails' = 'userDetails'
+    'UserDetails' = 'userDetails',
+    'Post' = 'post'
 }

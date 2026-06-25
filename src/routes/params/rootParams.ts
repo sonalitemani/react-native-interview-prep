@@ -3,4 +3,5 @@ interface rootParams {
     'UserDetials': {
         user: any
     }
+    'Post': undefined
 }
